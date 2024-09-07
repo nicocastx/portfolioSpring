@@ -1,0 +1,176 @@
+/*
+        ESTILOS GENERALES
+*/
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.main-container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 8vh;
+}
+.presentation-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn:hover{
+    color: white;
+    cursor: pointer;
+    background-color: slategray;
+}
+
+/*
+        ESTILOS PRESENTACION
+*/
+.welcome-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-body {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; /* Borde negro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+}
+.welcome-body-text {
+    font-size: 1.2rem;
+}
+.photo-container{
+    margin-bottom: 2rem;
+}
+.photo-presentation {
+    width: 10vw;
+
+}
+.welcome-body-text {
+    width: 70%;
+    margin: auto;
+}
+.welcome-body-description {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+        ESTILOS CARROUSEL
+*/
+
+.carousel-container{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.carousel{
+    width: 100%;
+}
+.carousel-inner {
+    display: flex;
+    justify-content: center; /* Esto centra los items en el medio */
+    align-items: center; /* Esto asegura que los items estén alineados verticalmente */
+}
+
+.carousel-item-left,
+.carousel-item-prev,
+.carousel-item-right,
+.carousel-item-next {
+    opacity: 0; /* Hace invisible el item saliente */
+    transition: opacity 0.3s ease-in-out; /* Aplica una transición suave */
+}
+
+.carousel-item {
+    margin: auto;
+    width: 100%;
+}
+.card {
+    width: 24rem;
+    height: 30rem;
+    margin: auto; /* Esto debería centrar la tarjeta dentro del item */
+}
+
+/* VER CONTROLES DEL CAROUSEL
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-size: 100%, 100%;
+}*/
+
+.more-proyects-btn{
+    width: 50%;
+    margin: 20px auto;
+}
+
+/*
+        ESTILOS RESPONSIVE
+*/
+
+@media (max-width: 1100px) {
+    .welcome-container {
+        width: 100%;
+    }
+    .welcome-body {
+        width: 90%;
+    }
+    .welcome-body-description{
+        flex-direction: column;
+    }
+    .photo-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-presentation {
+        width: 18vw;
+        margin: 2vh auto;
+    }
+    .more-proyects-btn{
+        width: 80%;
+    }
+    .welcome-body-text{
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .photo-presentation {
+        width: 22vw;
+        margin: 1vh auto;
+    }
+}
+
+@media (max-width: 1400px) {
+    .presentation-container{
+        flex-direction: column;
+    }
+}

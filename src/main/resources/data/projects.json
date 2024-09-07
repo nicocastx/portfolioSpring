@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Criptowin",
+    "description": "Proyecto armado para la entrega final del curso de desarrollo web del curso de CoderHouse. En este curso tuve que desarrollar un sitio web estatico y responsive con distintas paginas de contacto, informacion, etc. En este curso aprendi multiples tecnologias, orientadas al desarrollo web como HTML y CSS, a utilizar prepocesadores(SASS), metodologias agiles, versionado de proyectos, crear un sitio responsive, a desplegar un sitio web, y a optimizar el sitio con SEO",
+    "urlProject": "https://criptowin-4ctdw1k5j-nicocastx.vercel.app/",
+    "urlImage": "images/proyectos/proyectoCriptoWinDW.png"
+  },
+  {
+    "id": 2,
+    "name": "Game-Place",
+    "description": "Este proyecto se trata de una tienda online de videojuegos donde se puede comprar a traves de un stock una cantidad de juegos especificos de una base de datos subida en Firebase, ademas del uso de contexto para carritos y routing",
+    "urlProject": "https://github.com/nicocastx/Game-Place",
+    "urlImage": "images/proyectos/proyectoGamePlaceReact.png"
+  },
+  {
+    "id": 3,
+    "name": "Instrumenty",
+    "description": "Proyecto orientado al backend en donde desarrollo una aplicacion orientada al back-end, utilizando el patron MVC, utilizando para el desarrollo del backend Node.JS, de base de datos utilice una no relacional MongoDB, implemente asincronismo, autenticacion y autorizacion mediante tokens, contemple pruebas unitarias, y clusters, ademas aprendi a realizar el despligue de un servicio de este tipo de magnitud",
+    "urlProject": "https://github.com/nicocastx/proyectoFinalBackend",
+    "urlImage": "images/proyectos/proyectoInstrumentyBackend.png"
+  },
+  {
+  "id": 4,
+  "name": "SteamSim",
+  "description": "SteamSim es mi proyecto desarrollado para el curso de Javascript en la Academia de Coderhouse, aplicando funcionalidad con javascript nativo",
+  "urlProject": "https://steam-sim-coder-a0cy0c1h6-nicocastx.vercel.app/",
+  "urlImage": "images/proyectos/proyectoSteamSimJS.png"
+  },
+  {
+  "id": 5,
+  "name": "Portfolio en .NET",
+  "description": "Portfolio que cree anteriormente con el fin de poder presentar mis proyectos, esta basado en ASP.NET Core MVC 6",
+  "urlProject": "https://github.com/nicocastx/ProyectoPortfolio",
+  "urlImage": "images/proyectos/portfolionet.jpeg"
+  },
+  {
+  "id": 6,
+  "name": "Portfolio en Spring",
+  "description": "Portfolio que cree para poder presentar mis proyectos, ademas de practicar multiples herramientas de Spring, como manejo de exceptions, componentes, IOC, AOP, etc. Este proyecto esta basado en Spring, utilizando la libreria Thymeleaf para poder ofrecer una presentacion del frontend, ofrece funcionalidades para comunicarte conmigo con un mail, e informacion de mi trayectoria profesional y educativa, ademas de mis redes profesionales",
+  "urlProject": "A IMPLEMENTAR",
+  "urlImage": "images/proyectos/portfoliospring.png"
+  }
+]
