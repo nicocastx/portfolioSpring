@@ -1,17 +1,4 @@
-/*
-        ESTILOS GENERALES
-*/
-a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    text-align: center;
-}
+
 
 .projects-container{
     display: flex;
@@ -49,8 +36,3 @@ h1 {
     margin: auto auto 8vh;
 }
 
-.btn:hover{
-    color: white;
-    cursor: pointer;
-    background-color: slategray;
-}

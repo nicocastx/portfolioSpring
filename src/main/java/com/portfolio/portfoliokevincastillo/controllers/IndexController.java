@@ -3,9 +3,11 @@ package com.portfolio.portfoliokevincastillo.controllers;
 
 import com.portfolio.portfoliokevincastillo.entities.dto.ProjectDto;
 import com.portfolio.portfoliokevincastillo.services.ProjectService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class IndexController {
 
     @GetMapping("/")
     public String index(Model model) {
-        List<ProjectDto> projects = projectService.findAll().subList(0, 3);
+        List<ProjectDto> projects = projectService.findAll().subList(0, 4);
         projects.forEach(proj -> proj.setDescription(proj.getDescription().length() > 250 ? proj.getDescription().substring(0, 250) + "..." : proj.getDescription()));
         model.addAttribute("projects", projects);
         return "index";
@@ -38,4 +40,8 @@ public class IndexController {
         return "contact";
     }
 
+    @PostMapping("contact")
+    public void sendContactEmail(){
+
+    }
 }

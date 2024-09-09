@@ -1,16 +1,3 @@
-/*
-        ESTILOS GENERALES
-*/
-a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
 
 .main-container {
     width: 100%;
@@ -72,7 +59,8 @@ h1 {
 }
 .welcome-body-description {
     margin: auto;
-    width: 80%;
+    text-align: left;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

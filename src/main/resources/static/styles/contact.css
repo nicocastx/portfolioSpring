@@ -1,0 +1,29 @@
+h2{
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 50%;
+}
+
+.form-group{
+    margin: 2rem 0 1rem 0;
+}
+
+form button{
+    margin: 0 0 1rem 70%;
+    width: 30%;
+}
+
+@media (max-width: 800px) {
+    form{
+        width: 90%;
+    }
+}
