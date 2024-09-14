@@ -3,6 +3,7 @@ package com.portfolio.portfoliokevincastillo.controllers;
 
 import com.portfolio.portfoliokevincastillo.entities.dto.ProjectDto;
 import com.portfolio.portfoliokevincastillo.services.ProjectService;
+import com.portfolio.portfoliokevincastillo.services.ProjectServiceImpl;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -31,7 +32,6 @@ public class IndexController {
     public String projects(Model model) {
         List<ProjectDto> projects = projectService.findAll();
         model.addAttribute("projects", projects);
-        //TODO implementar
         return "projects";
     }
 
@@ -41,7 +41,13 @@ public class IndexController {
     }
 
     @PostMapping("contact")
-    public void sendContactEmail(){
+    public String sendContactEmail(HttpServletRequest request){
+        projectService.sendEmail(
+                request.getParameter("sender"),
+                request.getParameter("subject"),
+                request.getParameter("body")
+        );
 
+        return "redirect:/contact?success";
     }
 }
