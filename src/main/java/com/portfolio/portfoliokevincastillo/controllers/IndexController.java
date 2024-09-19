@@ -22,7 +22,7 @@ public class IndexController {
 
     public IndexController(ProjectService projectService){
         this.projectService = projectService;
-        Bandwidth limit = Bandwidth.classic(2, Refill.greedy(2, Duration.ofMinutes(2)));
+        Bandwidth limit = Bandwidth.builder().capacity(2).refillGreedy(2, Duration.ofMinutes(2)).build();
         this.bucket = Bucket.builder()
                 .addLimit(limit)
                 .build();

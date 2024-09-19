@@ -15,4 +15,15 @@ public class Project {
     private String description;
     private String urlProject;
     private String urlImage;
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", urlProject='" + urlProject + '\'' +
+                ", urlImage='" + urlImage + '\'' +
+                '}';
+    }
 }
