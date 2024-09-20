@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
+import java.io.File;
 import java.util.*;
 
 @Repository
@@ -28,10 +29,10 @@ public class ProjectRepositoryJson implements ProjectRepository {
 
     @PostConstruct
     public void init() {
-        ClassPathResource classPathResource = new ClassPathResource(jsonFilePath);
+        File file = new File(System.getProperty("user.dir") + jsonFilePath);
         try {
-            log.info("Reading json file: " + classPathResource.getFile().getAbsolutePath());
-            projects = Arrays.asList(objectMapper.readValue(classPathResource.getFile(), Project[].class));
+            log.info("Reading json file: " + file.getAbsolutePath());
+            projects = Arrays.asList(objectMapper.readValue(file, Project[].class));
             log.info("Project array made and reading is completed");
         } catch (Exception e){
             log.error("Exception while reading file: \n{}", e.getMessage());
